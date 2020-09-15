@@ -1,6 +1,6 @@
 {
   "name": "@voidpixel/loop-worker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -8,8 +8,9 @@
   "scripts": {
     "start": "node dist/index.js",
     "prestart": "npm run build",
-    "link": "npm link @voidpixel/loop-worker",
-    "build": "./node_modules/.bin/tsc --allowjs"
+    "build": "./node_modules/.bin/tsc --allowjs",
+    "prepublish": "npm run build",
+    "link": "npm link @voidpixel/loop-worker"
   },
   "files": [
     "/dist"

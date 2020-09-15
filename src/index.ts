@@ -29,7 +29,7 @@ export class LoopWorker extends EventEmitter {
         this._forkChild = fork(
             '', {
                 execArgv: [
-                    './dist/worker.js',
+                    `${__dirname}/worker.js`,
                     ...Object
                     .keys(options)
                     .reduce((obj, key) => ([
