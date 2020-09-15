@@ -1,0 +1,33 @@
+{
+  "name": "@voidpixel/loop-worker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "repository": "git://github.com/voidpixel/LoopWorker.git",
+  "scripts": {
+    "start": "node dist/index.js",
+    "prestart": "npm run build",
+    "link": "npm link @voidpixel/LoopWorker",
+    "build": "./node_modules/.bin/tsc --allowjs"
+  },
+  "files": [
+    "/dist"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "keywords": [
+    "node",
+    "typescript"
+  ],
+  "author": "voidpixel",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "latest",
+    "ts-node": "latest",
+    "typescript": "latest",
+    "typescript-bundle": "latest"
+  },
+  "dependencies": {}
+}
